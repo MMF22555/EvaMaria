@@ -81,7 +81,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="** നിങ്ങൾ താഴെ കാണുന്ന ലിങ്കിൽ ക്ലിക്ക് ചെയ്ത് mainchannelലിൽ ജോയിൻ ചെയ്‌തെന് ശേഷം TryAgain കൊടുക്കു..!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
